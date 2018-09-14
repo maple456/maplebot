@@ -193,8 +193,8 @@ setTime = wait2['setTime']
 def cTime_to_datetime(unixtime):
     return datetime.datetime.fromtimestamp(int(str(unixtime)[:len(str(unixtime))-3]))
 
-admin =['ud5ff1dff426cf9e3030c7ac2a61512f0','ua10c2ad470b4b6e972954e1140ad1891',clMID]
-owners = ["ud5ff1dff426cf9e3030c7ac2a61512f0","ua10c2ad470b4b6e972954e1140ad1891"]
+admin =['uec6d62c3e4a61f033332bc1d86133e49','ud9964664052659ba468d55de6df025be',clMID]
+owners = ["uec6d62c3e4a61f033332bc1d86133e49","ud9964664052659ba468d55de6df025be"]
 #if clMID not in owners:
 #    python = sys.executable
 #    os.execl(python, python, *sys.argv)
@@ -331,7 +331,7 @@ def lineBot(op):
                 if text.lower() == 'help':
                     helpMessage = helpmessage()
                     cl.sendMessage(to, str(helpMessage))
-                    cl.sendContact(to,"ua10c2ad470b4b6e972954e1140ad1891")
+                    cl.sendContact(to,"uec6d62c3e4a61f033332bc1d86133e49")
                 elif text.lower() == 'bye':
                     cl.sendMessage(to,"ByeBye")
                     cl.leaveGroup(msg.to)
